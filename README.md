@@ -45,9 +45,9 @@ git clone https://github.com/sebasgt301zapata/biblioteca_publica
 
 ##Crear y activar entorno virtual:
 
--python manage.py makemigrations
--python manage.py migrate
+-python -m venv venv
 
+-venv\Scripts\activate
 
 ##Instalar dependencias:
 
@@ -57,6 +57,7 @@ git clone https://github.com/sebasgt301zapata/biblioteca_publica
 ##Aplicar migraciones:
 
 -python manage.py makemigrations
+
 -python manage.py migrate
 
 
