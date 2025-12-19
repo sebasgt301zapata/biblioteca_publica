@@ -1,0 +1,16 @@
+<h2>Eliminar libro</h2>
+
+<p>
+    ¿Está seguro de que desea eliminar el libro
+    <strong>"{{ object.title }}"</strong>?
+</p>
+
+<form method="post">
+    {% csrf_token %}
+    <button class="btn btn-delete" type="submit">
+        Sí, eliminar
+    </button>
+</form>
+
+<a href="{% url 'book_list' %}">Cancelar</a>
+

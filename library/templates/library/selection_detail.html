@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selección de préstamo</title>
+    <link rel="stylesheet" href="{% static 'library/styles.css' %}">
+</head>
+<body>
+
+<h1>Selección de préstamo</h1>
+
+{% if selection|length == 0 %}
+    <p>No hay libros seleccionados.</p>
+{% else %}
+<table>
+    <tr>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Acción</th>
+    </tr>
+
+    {% for item in selection %}
+    <tr>
+        <td>{{ item.book.title }}</td>
+        <td>{{ item.book.author }}</td>
+        <td>
+            <a class="btn btn-delete"
+               href="{% url 'remove_from_selection' item.book.id %}">
+               Quitar
+            </a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<div style="margin-bottom: 20px;">
+    <a class="btn btn-add" href="{% url 'confirm_loan' %}">
+        ✅ Confirmar préstamo
+    </a>
+</div>
+
+{% endif %}
+
+<br>
+<a class="link-back" href="{% url 'book_list' %}">
+    ← Volver al catálogo
+</a>
+
+</body>
+</html>

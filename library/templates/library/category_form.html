@@ -1,0 +1,12 @@
+<h2>Crear nueva categoría</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-add" type="submit">
+        Guardar categoría
+    </button>
+</form>
+
+<a href="{% url 'book_list' %}">← Volver al catálogo</a>
+

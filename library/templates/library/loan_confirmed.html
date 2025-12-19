@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Préstamo confirmado</title>
+    <link rel="stylesheet" href="{% static 'library/styles.css' %}">
+</head>
+<body>
+
+<h1>✅ Préstamo confirmado</h1>
+
+<p>Préstamo número: <strong>#{{ loan.id }}</strong></p>
+<p>Lector: <strong>{{ loan.reader.name }}</strong></p>
+<p>Libros prestados: <strong>{{ loan.total_books }}</strong></p>
+
+<a class="btn btn-add" href="{% url 'book_list' %}">
+    Volver al catálogo
+</a>
+
+</body>
+</html>
+
