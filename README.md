@@ -69,38 +69,6 @@ python manage.py runserver
 
 🗂️ Estructura del Proyecto – Biblioteca Pública
 ```bash
-1. Clonar el repositorio:
-
-
-git clone https://github.com/sebasgt301zapata/biblioteca_publica
-cd biblioteca_publica
-
-
-Crear y activar entorno virtual:
-
-
-python manage.py makemigrations
-python manage.py migrate
-
-
-Instalar dependencias:
-
-pip install -r requirements.txt
-
-
-Aplicar migraciones:
-
-
-python manage.py makemigrations
-python manage.py migrate
-
-
-🚀 Ejecutar el servidor
-
-python manage.py runserver
-
-
-🗂️ Estructura del Proyecto – Biblioteca Pública
 
 biblioteca_publica/
 │
