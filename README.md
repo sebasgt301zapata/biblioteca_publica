@@ -40,14 +40,6 @@ Permite visualizar un catálogo de libros, filtrarlos por categoría, selecciona
 
 ---
 
-## 🛠️ Instalación
-
-1. Clonar el repositorio:
-
-```bash
-git clone https://github.com/sebasgt301zapata/biblioteca_publica
-cd biblioteca_publica
-
 Crear y activar entorno virtual:
 
 python manage.py makemigrations
