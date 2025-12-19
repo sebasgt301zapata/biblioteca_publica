@@ -49,14 +49,19 @@ cd biblioteca_publica
 
 Crear y activar entorno virtual:
 
+
 python manage.py makemigrations
 python manage.py migrate
+
 
 Instalar dependencias:
 
 pip install -r requirements.txt
 
+
 Aplicar migraciones:
+
+
 python manage.py makemigrations
 python manage.py migrate
 
