@@ -1,5 +1,3 @@
-# biblioteca_publica
-
 # Biblioteca Pública
 
 Este es un proyecto web de gestión de biblioteca desarrollado con **Django 4.2**.  
@@ -40,6 +38,15 @@ Permite visualizar un catálogo de libros, filtrarlos por categoría, selecciona
 
 ---
 
+## 🛠️ Instalación
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/sebasgt301zapata/biblioteca_publica
+cd biblioteca_publica
+
+
 Crear y activar entorno virtual:
 
 python manage.py makemigrations
@@ -57,6 +64,8 @@ python manage.py migrate
 
 python manage.py runserver
 
+
+🗂️ Estructura del Proyecto – Biblioteca Pública
 
 biblioteca_publica/
 │
