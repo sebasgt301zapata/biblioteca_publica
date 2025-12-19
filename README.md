@@ -43,25 +43,24 @@ git clone https://github.com/sebasgt301zapata/biblioteca_publica
 -cd biblioteca_publica
 
 
-Crear y activar entorno virtual:
-
+##Crear y activar entorno virtual:
 
 -python manage.py makemigrations
 -python manage.py migrate
 
 
-Instalar dependencias:
+##Instalar dependencias:
 
 -pip install -r requirements.txt
 
 
-Aplicar migraciones:
+##Aplicar migraciones:
 
 -python manage.py makemigrations
 -python manage.py migrate
 
 
-🚀 Ejecutar el servidor
+##🚀 Ejecutar el servidor
 
 -python manage.py runserver
 
