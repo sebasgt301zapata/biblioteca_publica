@@ -40,31 +40,30 @@ Permite visualizar un catálogo de libros, filtrarlos por categoría, selecciona
 
 ## 🛠️ Instalación
 git clone https://github.com/sebasgt301zapata/biblioteca_publica
-cd biblioteca_publica
+-cd biblioteca_publica
 
 
 Crear y activar entorno virtual:
 
 
-python manage.py makemigrations
-python manage.py migrate
+-python manage.py makemigrations
+-python manage.py migrate
 
 
 Instalar dependencias:
 
-pip install -r requirements.txt
+-pip install -r requirements.txt
 
 
 Aplicar migraciones:
 
-
-python manage.py makemigrations
-python manage.py migrate
+-python manage.py makemigrations
+-python manage.py migrate
 
 
 🚀 Ejecutar el servidor
 
-python manage.py runserver
+-python manage.py runserver
 
 
 🗂️ Estructura del Proyecto – Biblioteca Pública
