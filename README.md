@@ -47,7 +47,14 @@ git clone https://github.com/sebasgt301zapata/biblioteca_publica
 
 -python -m venv venv
 
+##Windows:
+
 -venv\Scripts\activate
+
+##Linux / macOS:
+
+source venv/bin/activate
+
 
 ##Instalar dependencias:
 
@@ -65,6 +72,73 @@ git clone https://github.com/sebasgt301zapata/biblioteca_publica
 
 -python manage.py runserver
 
+##Abrir en el navegador:
+
+http://127.0.0.1:8000/
+
+🏗️ Arquitectura del Proyecto
+
+El proyecto sigue una arquitectura basada en MVC (Modelo – Vista – Template) utilizando Django.
+
+📦 Componentes principales
+🔹 Modelos
+
+Book: Representa un libro (título, autor, año, categoría)
+
+Category: Clasificación de los libros
+
+Reader: Persona que realiza préstamos
+
+Loan: Préstamo realizado por un lector
+
+LoanItem: Relación entre préstamo y libros
+
+🔹 Dominio
+
+LoanSelection: Maneja la selección temporal de libros usando sesiones (carrito de préstamo)
+
+LoanSelectionItem: Representa un libro dentro de la selección
+
+🔹 Vistas
+
+BookListView (CBV): Muestra el catálogo de libros
+
+add_to_selection: Agrega libros a la selección
+
+selection_detail: Muestra la selección actual
+
+remove_from_selection: Elimina libros de la selección
+
+confirm_loan: Confirma el préstamo y lo guarda en la base de datos
+
+🔹 Templates
+
+Interfaz completamente en español
+
+Uso de HTML + CSS
+
+Navegación clara entre catálogo, selección y confirmación
+
+🔄 Flujo de Uso
+
+1️⃣ El usuario ingresa al catálogo de libros
+2️⃣ Selecciona uno o más libros
+3️⃣ Visualiza la selección de préstamo
+4️⃣ Puede quitar libros si lo desea
+5️⃣ Confirma el préstamo
+6️⃣ El sistema:
+
+Crea el préstamo
+
+Asocia los libros
+
+Limpia la selección
+
+Muestra confirmación
+
+Flujo resumido:
+
+Catálogo → Agregar libro → Ver selección → Confirmar préstamo → Préstamo creado
 
 🗂️ Estructura del Proyecto – Biblioteca Pública
 ```bash
