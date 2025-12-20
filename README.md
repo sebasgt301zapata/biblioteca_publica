@@ -53,7 +53,7 @@ git clone https://github.com/sebasgt301zapata/biblioteca_publica
 
 ##Linux / macOS:
 
-source venv/bin/activate
+-source venv/bin/activate
 
 
 ##Instalar dependencias:
@@ -74,7 +74,7 @@ source venv/bin/activate
 
 ##Abrir en el navegador:
 
-http://127.0.0.1:8000/
+-http://127.0.0.1:8000/
 
 🏗️ Arquitectura del Proyecto
 
